@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\f18ra\source\repos\Solovey-Shtrassen-MPI\Solovey-Shtrassen-MPI\Source.cpp(19,22): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\f18ra\source\repos\Solovey-Shtrassen-MPI\Solovey-Shtrassen-MPI\Source.cpp(118,9): warning C4101: procIterNum: неиспользованная локальная переменная
+  Solovey-Shtrassen-MPI.vcxproj -> C:\Users\f18ra\source\repos\Solovey-Shtrassen-MPI\x64\Debug\Solovey-Shtrassen-MPI.exe

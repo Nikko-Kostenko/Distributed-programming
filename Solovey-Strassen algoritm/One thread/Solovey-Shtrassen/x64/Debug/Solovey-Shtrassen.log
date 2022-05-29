@@ -1,0 +1,3 @@
+﻿  Source.cpp
+C:\Users\f18ra\source\repos\Solovey-Shtrassen\Solovey-Shtrassen\Source.cpp(7,24): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Solovey-Shtrassen.vcxproj -> C:\Users\f18ra\source\repos\Solovey-Shtrassen\x64\Debug\Solovey-Shtrassen.exe
