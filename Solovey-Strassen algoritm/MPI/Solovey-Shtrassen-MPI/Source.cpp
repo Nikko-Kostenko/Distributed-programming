@@ -75,11 +75,14 @@ void processInit(long long& number, int& iterat, int& localCount) {
             }
         } while (iterat < ProcNum);
         int procIterNum = iterat / ProcNum;
-        int leftIterats = iterat - (procIterNum * ProcNum);
+        int leftIterats = iterat % ProcNum;
         for (int i = 0; i < ProcNum; i++)
+        {
             procIterCount[i] = procIterNum;
-        for (int i = 0; i < leftIterats; i++)
-            procIterCount[i] += 1;
+            if(leftIterats > 0)
+                 procIterCount[i]++;
+        }
+        
     }
     MPI_Bcast(&number, sizeof(number), MPI_LONG_LONG, 0, MPI_COMM_WORLD);
     MPI_Scatter(procIterCount, 1, MPI_INT, &localCount, 1, MPI_INT, 0, MPI_COMM_WORLD);
